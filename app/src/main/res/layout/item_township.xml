@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_township"
+    android:layout_width="190dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgcolor"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/img_restaurantpic"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/food"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <TextView
+            android:id="@+id/txt_restaurantname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/img_restaurantpic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="KFC"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/txtcolor"
+
+            />
+        <TextView
+            android:id="@+id/txt_restaurantphno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt_restaurantname"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="099888776"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/txtcolor"
+            android:textSize="10dp"
+
+            />
+        <TextView
+            android:id="@+id/txt_restaurantaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt_restaurantphno"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:text=" No.1073, Thanthumar Street, Ward 7, South Okkalapa Township, Yangon"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/txtcolor"
+            android:textSize="@dimen/textsize"
+            android:layout_marginRight="10dp"
+            app:layout_goneMarginLeft="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
